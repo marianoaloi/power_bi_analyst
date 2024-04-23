@@ -1,0 +1,15 @@
+version: "3.9"
+
+networks:
+  maloinet:
+
+
+
+services:
+
+  mysql:
+    image: mysql:8
+    port:
+      - "3306:3306"
+    networks:
+      - maloinet
