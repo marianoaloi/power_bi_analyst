@@ -9,7 +9,9 @@ services:
 
   mysql:
     image: mysql:8
-    port:
-      - "3306:3306"
+    ports:
+      - "33060:3306"
     networks:
       - maloinet
+    environment:
+      - MYSQL_ROOT_PASSWORD=qwer1234
